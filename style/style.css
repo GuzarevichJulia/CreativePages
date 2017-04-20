@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.wrapper {
+    min-width: 600px;
+}
+
+body {
+    background: url(../img/bg-body.png);
+    font: 12px Helvetica, Arial, sans-serif;
+}
+
+/*HEADER BEGIN*/
+.plus {
+    color: #f5937e;
+    font-size: 24px;
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover
+{
+    color: #f26c4f !important;
+}
+
+.login {
+    float: right;
+    margin: 18px 5% 0 0;
+}
+
+.login a{
+    color: white;
+}
+
+.login a:focus,
+.login a:hover
+{
+    color: #f26c4f !important;
+}
+
+.navbar-header {
+    padding-right: 2%;
+    padding-left: 12%;
+    height: 45px !important;
+    background: #f26c4f;
+}
+
+.navbar-brand {
+    font-size: 24px;
+}
+
+.collapse.navbar-collapse {
+    background: url(../img/pt-header.png);
+    font: 12px Helvetica, Arial, sans-serif;
+}
+
+.container-fluid {
+    height: 90px;
+    background: url(../img/bg2-header.png);
+}
+
+.collapse.navbar-collapse {
+    height: 45px !important;
+    padding-left: 25%;
+}
+
+.navbar.navbar-default {
+    height: 95px !important;
+    background: #b6b6b6;
+}
+
+/*HEADER END*/
+
+/*FOOTER BEGIN*/
+footer {
+    height: 390px;
+    background: #343434;
+}
+
+footer p {
+    color: #ffffff;
+    font: 12px Helvetica Neue, Arial, sans-serif;;
+}
+
+footer .row.info {
+    padding: 55px 0 25px 0;
+}
+
+footer p {
+    line-height: 160%;
+}
+
+.join {
+    width: 100%;
+    border-radius: 4px;
+    max-height: 50px;
+    background: white;
+    margin-left: 40px;
+}
+
+input[type="search"] {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 50px;
+    vertical-align: middle;
+    text-align: left;
+}
+
+input[type="submit"] {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background: #f27054;
+    color: white;
+    margin: 5px 10%;
+}
+
+.fa.fa-envelope {
+    padding: 18px 2px;
+    color: #dcdcdc;
+}
+
+.round {
+    background: #f26c4f;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    color: white;
+    font-size: 24px;
+    padding: 10px 15px;
+}
+
+.icons {
+    padding-left: 0 !important;
+}
+
+.copyright {
+    padding-top: 40px;
+}
+
+.copyright p {
+    color: #aeaeae;
+}
+
+/*FOOTER END*/
+
+
+@media screen and (max-width: 768px), screen and (max-height: 768px) {
+    .login {
+        float: left;
+        margin: 0 5% 5px 0;
+    }
+}
