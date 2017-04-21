@@ -7,6 +7,11 @@ a {
     text-decoration: none !important;
 }
 
+@font-face {
+    font-family: Helvetica;
+    src: url(../fonts/Helvetica.otf);
+}
+
 .wrapper {
     min-width: 600px;
 }
@@ -76,10 +81,211 @@ body {
 
 /*HEADER END*/
 
+/*CONTAINER BEGIN*/
+.container{
+    min-height:100%;
+    height:100%;
+    position:relative;
+}
+
+.picture{
+    height: 315px;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    border: 6px double #d7d7d7;
+    background: white;
+    float: left;
+    position: relative;
+}
+
+.picture img{
+    width: 100%;
+    margin: -40% 0 0 0;
+}
+
+.facebook-button{
+    position: absolute;
+    left: 2%;
+    top: 60%;
+}
+
+.twitter-button{
+    position: absolute;
+    left: 2%;
+    top: 80%;
+}
+
+.edit-button{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    height: 30px;
+    width: 30px;
+    background: #f26c4f;
+    border-radius: 4px;
+}
+
+.destroy-button{
+    position: absolute;
+    right: 2%;
+    top: 13%;
+    height: 30px;
+    width: 30px;
+    background: #f26c4f;
+    border-radius: 4px;
+}
+
+.comments-button{
+    position: absolute;
+    right: 2%;
+    top: 86%;
+    height: 30px;
+    width: 120px;
+    background: #f26c4f;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    font: 14px Myriad Pro, Arial;
+}
+
+.comments-button p{
+    padding: 5%;
+}
+
+.fa-pencil{
+    font-size: 16px;
+    padding: 20% 30%;
+}
+
+.fa-times{
+    font-size: 16px;
+    padding: 20% 30%;
+}
+
+.fa{
+    color: white;
+}
+
+.aside{
+    background: white;
+    border: 1px solid #d7d7d7;
+    margin-bottom: 20px;
+}
+
+.aside p{
+    font: 11px Helvetica, Arial;
+    color: #787878;
+    line-height: 180%;
+    font-style: italic;
+    padding: 5px 15px 0 40px;
+    margin-bottom: 0;
+}
+
+h3{
+    font: 16px Helvetica, Arial;
+    color: #3a3e3f;
+    padding: 30px 0 0 40px;
+    font-weight:bold;
+    margin-top: 0;
+}
+
+h4{
+    font: 12px Helvetica, Arial;
+    color: #959595;
+    padding: 8px 40px 0 40px;
+    line-height: 200%;
+    font-style:italic;
+    margin: 0;
+}
+
+h5{
+    font: 11px Helvetica, Arial;
+    color: #aeaeae;
+    padding: 8px 0 0 40px;
+    font-style:italic;
+}
+
+h6{
+    font: 10px Helvetica, Arial;
+    color: #b9b9b9;
+    padding: 0 0 0 20px;
+    font-style:italic;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.recieve-updates {
+    width: 80%;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    max-height: 50px;
+    background: white;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.aside input[type="search"] {
+    border: none;
+    outline: none;
+    -webkit-appearance: none;
+    width: 90%;
+    height: 48px;
+    text-align: left;
+}
+
+.recieve-button{
+    color: #555555;
+    background: #e3e3e3;
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 1.5%;
+    position: relative;
+    border: 1px solid #dcdcdc;
+}
+
+.recieve-button-value{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -18% 0 0 -25%;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.aside ul {
+    list-style-type: none;
+    padding: 0 5% 0 60px;
+    margin-bottom: 0;
+}
+
+.aside li:before{
+    content: '\25ba';
+    padding-right: 6px;
+}
+
+.aside li{
+    font-size: 12px;
+    color: #787878;
+    line-height: 180%;
+    font-style: italic;
+    margin-bottom: 0;
+    text-indent: -20px;
+    padding-top: 10px;
+}
+
+/*CONTAINER END*/
+
 /*FOOTER BEGIN*/
 footer {
     height: 390px;
     background: #343434;
+
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
 footer p {
@@ -96,14 +302,14 @@ footer p {
 }
 
 .join {
-    width: 100%;
+    width: 93%;
     border-radius: 4px;
     max-height: 50px;
     background: white;
     margin-left: 40px;
 }
 
-input[type="search"] {
+footer input[type="search"] {
     border: none;
     outline: none;
     -webkit-appearance: none;
@@ -113,14 +319,16 @@ input[type="search"] {
     text-align: left;
 }
 
-input[type="submit"] {
+footer input[type="submit"] {
     width: 90%;
     height: 40px;
     border: none;
     border-radius: 4px;
     background: #f27054;
-    color: white;
+    color: #ca3c20;
     margin: 5px 10%;
+    font: 14px Helvetica, Arial;
+    font-weight:bold;
 }
 
 .fa.fa-envelope {
@@ -133,7 +341,6 @@ input[type="submit"] {
     border-radius: 50%;
     height: 50px;
     width: 50px;
-    color: white;
     font-size: 24px;
     padding: 10px 15px;
 }
@@ -153,7 +360,7 @@ input[type="submit"] {
 /*FOOTER END*/
 
 
-@media screen and (max-width: 768px), screen and (max-height: 768px) {
+@media screen and (max-width: 768px) {
     .login {
         float: left;
         margin: 0 5% 5px 0;
