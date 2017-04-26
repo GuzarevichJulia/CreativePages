@@ -75,6 +75,28 @@ body {
 }
                         /*HEADER END*/
 
+.references{
+    margin: 0;
+    position: fixed;
+    top: 30%;
+    width: 40px;
+    height: 190px;
+    z-index: 1;
+}
+
+.link{
+    display: block;
+    height: 47px;
+    background: linear-gradient(to bottom, #f26e51, #f16649);
+    border: 1px solid #d75f48;
+}
+
+.link i{
+    font-size: 24px;
+    color: #b3371e;
+    margin: 8px;
+}
+
                        /*CONTAINER BEGIN*/
 .container{
     min-height:100%;
