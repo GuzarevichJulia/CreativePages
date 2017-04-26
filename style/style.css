@@ -390,6 +390,79 @@ h6{
 }
                         /*CONTAINER END*/
 
+                        /*POST BEGIN*/
+.post{
+    background: #fefefe;
+    width: 100%;
+    height: 485px;
+    margin-bottom: 20px;
+    border: 1px solid #d7d7d7;
+}
+
+.post h2{
+    margin-top: 0px;
+}
+
+.post p{
+    font: 13.88px Helvetica, Arial;
+    color: #888888;
+    font-weight: bold;
+    margin-left: 43px;
+    margin-bottom: 2px;
+}
+
+.post input{
+    margin-left: 43px;
+    width: 90%;
+    height: 25px;
+    border-radius: 3px;
+    border: 1px solid #a9a9a9;
+    box-shadow: inset 0 0 3px #a0a0a0;
+    margin-bottom: 8px;
+}
+
+.asterisk{
+    color: #f26c4f;
+}
+
+.post h3{
+    font-size: 14px;
+    color: #aeaeae;
+    font-weight: normal;
+    font-style: italic;
+    margin-top: -35px;
+    margin-left: 5px;
+}
+
+textarea{
+    width: 90%;
+    height: 175px;
+    margin-left: 43px;
+    border-radius: 3px;
+    border: 1px solid #a9a9a9;
+    box-shadow: inset 0 0 3px #a0a0a0;
+    resize: none;
+}
+
+button.create{
+    color: white;
+    background: linear-gradient(to bottom, #ff9780, #f36f52);
+    font: 14px Helvetica, Arial;
+    margin-left: 43px;
+    margin-top: 15px;
+}
+
+button.cancel{
+    margin-top: 15px;
+    background: #e1e1e1;
+    font: 14px Helvetica, Arial;
+    font-weight: bold;
+    color: #555555;
+    background: linear-gradient(to bottom, #eeeeee, #d4d4d4);
+    margin-left: 5px;
+}
+                        /*POST END*/
+
                         /*FOOTER BEGIN*/
 footer {
     height: 390px;
