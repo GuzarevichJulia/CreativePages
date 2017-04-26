@@ -390,8 +390,8 @@ h6{
 }
                         /*CONTAINER END*/
 
-                        /*POST BEGIN*/
-.post{
+                        /*POST FORM BEGIN*/
+.post-form{
     background: #fefefe;
     width: 100%;
     height: 485px;
@@ -399,11 +399,11 @@ h6{
     border: 1px solid #d7d7d7;
 }
 
-.post h2{
+.post-form h2, .comments-view h2{
     margin-top: 0px;
 }
 
-.post p{
+.post-form p{
     font: 13.88px Helvetica, Arial;
     color: #888888;
     font-weight: bold;
@@ -411,7 +411,7 @@ h6{
     margin-bottom: 2px;
 }
 
-.post input{
+.post-form input{
     margin-left: 43px;
     width: 90%;
     height: 25px;
@@ -425,7 +425,7 @@ h6{
     color: #f26c4f;
 }
 
-.post h3{
+.post-form h3{
     font-size: 14px;
     color: #aeaeae;
     font-weight: normal;
@@ -461,7 +461,153 @@ button.cancel{
     background: linear-gradient(to bottom, #eeeeee, #d4d4d4);
     margin-left: 5px;
 }
-                        /*POST END*/
+                        /*POST FORM END*/
+
+                        /*POST VIEW END*/
+.post-view{
+    height: 450px;
+}
+
+.facebook-button-view{
+    position: absolute;
+    left: 2%;
+    top: 72%;
+}
+
+.twitter-button-view{
+    position: absolute;
+    left: 2%;
+    top: 85%;
+}
+
+.title-post-view{
+    position: absolute;
+    top: 39%;
+    min-height: 75px;
+    width: 100%;
+    background: black;
+    opacity: 0.4;
+}
+
+.post-view h2{
+    position: absolute;
+    top: 35%;
+    color: white;
+    padding: 1% 15%;
+}
+
+.edit-button-view{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    height: 30px;
+    width: 30px;
+    background: #f26c4f;
+    border-radius: 4px;
+}
+
+.destroy-button-view{
+    position: absolute;
+    right: 1%;
+    top: 9%;
+    height: 30px;
+    width: 30px;
+    background: #f26c4f;
+    border-radius: 4px;
+}
+
+.text-view{
+    background: #fefefe;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    width: 100%;
+    box-shadow: 0 6px 0 -4px #ffffff,
+    0 6px 0 -3px #cbc9c1,
+    0 13px 0 -8px #ffffff,
+    0 13px 0 -7px #cbc9c1;
+}
+
+.text-view h3{
+    color: #f26c4f;
+    font: 15px Helvatica, Arial;
+    font-weight: bold;
+    padding: 10px 40px 0;
+}
+
+.text-view p{
+    font: 12px Myriard Pro, Arial;
+    color: #959595;
+    padding: 8px 40px 0 40px;
+    line-height: 200%;
+    margin: 0;
+}
+
+.comments-view{
+    background: #fefefe;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    border: 1px solid #d7d7d7;
+    float: left;
+    width: 100%;
+}
+
+.comment-item{
+    display: block;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.comment-item img{
+    height: 50px;
+    width: 50px;
+    margin-left: 40px;
+    float: left;
+    border: 1px solid #d7d7d7;
+}
+
+.comment-item h3{
+    color: #f26c4f;
+    font: 15px Helvatica, Arial;
+    font-weight: bold;
+    padding: 0 10px 0;
+    margin-left: 5px;
+    float: left;
+}
+
+.comments-view h4{
+    color: #3a3e3f;
+    font: 14px Helvatica, Arial;
+    font-style: italic;
+    padding: 1px 10px 0 0;
+    padding: 1px 10px 0 0;
+    float: left;
+}
+
+.comment-item p{
+    margin: -30px 20px 20px 105px;
+    font: 12px Helvetica, Arial;
+    color: #959595;
+    line-height: 150%;
+    float: left;
+}
+
+.nested{
+    margin-left: 65px;
+    width: 90%;
+}
+
+.comment-item h5{
+    color: #f26c4f;
+    font: 15px Helvatica, Arial;
+    font-weight: bold;
+    padding: 0;
+    margin: 1px 10px 0 0;
+    float: left;
+}
+
+                        /*POST VIEW END*/
 
                         /*FOOTER BEGIN*/
 footer {
