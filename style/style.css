@@ -7,16 +7,16 @@ a {
     src: url(../fonts/Helvetica.otf);
 }
 
-.wrapper {
-    min-width: 600px;
-}
-
 body {
     background: url(../img/bgsmall-body.png);
     font: 12px Helvetica, Arial, sans-serif;
 }
 
                         /*HEADER BEGIN*/
+.navbar-collapse{
+    width: 100%;
+}
+
 .plus {
     color: #f5937e;
     font-size: 24px;
@@ -29,8 +29,8 @@ body {
 }
 
 .login {
-    float: right;
-    margin: 18px 5% 0 0;
+    float: left;
+    margin: 18px 0 0 33%;
 }
 
 .login a{
@@ -66,16 +66,19 @@ body {
 
 .collapse.navbar-collapse {
     height: 45px !important;
-    padding-left: 25%;
 }
 
 .navbar.navbar-default {
     height: 95px !important;
     background: #b6b6b6;
 }
+
+.nav.navbar-nav{
+    padding-left: 10px;
+}
                         /*HEADER END*/
 
-.references{
+.social-networks{
     margin: 0;
     position: fixed;
     top: 30%;
@@ -101,18 +104,22 @@ body {
 .container{
     min-height:100%;
     height:100%;
+    min-width: 300px;
     position:relative;
 }
 
 .picture{
-    height: 315px;
+    height: 40%;
+    max-height: 315px;
     width: 100%;
     margin: 0 0 10px 0;
     overflow: hidden;
-    border: 4px double #d7d7d7;
     background: white;
     float: left;
     position: relative;
+    border: 1px double #d7d7d7;
+    outline: 7px solid white;
+    outline-offset: -8px;
 }
 
 .picture img{
@@ -122,20 +129,20 @@ body {
 
 .facebook-button{
     position: absolute;
-    left: 2%;
-    top: 60%;
+    left: 18px;
+    bottom: 72px;
 }
 
 .twitter-button{
     position: absolute;
-    left: 2%;
-    top: 80%;
+    left: 18px;
+    bottom: 16px;
 }
 
 .edit-button{
     position: absolute;
-    right: 2%;
-    top: 2%;
+    right: 13px;
+    top: 13px;
     height: 30px;
     width: 30px;
     background: #f26c4f;
@@ -144,8 +151,8 @@ body {
 
 .destroy-button{
     position: absolute;
-    right: 2%;
-    top: 13%;
+    right: 13px;
+    top: 46px;
     height: 30px;
     width: 30px;
     background: #f26c4f;
@@ -154,8 +161,8 @@ body {
 
 .comments-button{
     position: absolute;
-    right: 2%;
-    top: 86%;
+    right: 12px;
+    bottom: 12px;
     height: 30px;
     width: 120px;
     background: #f26c4f;
@@ -170,13 +177,13 @@ body {
 }
 
 .fa-pencil{
-    font-size: 16px;
-    padding: 20% 30%;
+    font-size: 17px;
+    padding: 21% 25%;
 }
 
 .fa-times{
-    font-size: 16px;
-    padding: 20% 30%;
+    font-size: 18px;
+    padding: 20% 26%;
 }
 
 .fa{
@@ -200,7 +207,7 @@ body {
 
 .description:after, .description:before {
     bottom: 100%;
-    left: 9%;
+    left: 55px;
     border: solid transparent;
     content: " ";
     height: 0;
@@ -211,13 +218,13 @@ body {
 
 .description:after {
     border-width: 18px;
-    margin-left: -34px;
+    margin-left: -32px;
     border-bottom-color: white;
 }
 .description:before {
     border-bottom-color: #d7d7d7;
     border-width: 20px;
-    margin-left: -36px;
+    margin-left: -34px;
 }
 
 .description.small:after, .description.small:before {
@@ -316,7 +323,7 @@ h6{
 }
 
 .recieve-updates button{
-    margin: 7px 10px;
+    margin: 7px 11px 7px 0;
     width: 65px;
     background: #e1e1e1;
     font: 14px Helvetica, Arial;
@@ -338,10 +345,10 @@ h6{
     outline: none;
     -webkit-appearance: none;
     width: 90%;
-    height: 45px;
+    height: 42px;
     text-align: left;
     margin-left: 10px;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .aside ul {
@@ -351,8 +358,9 @@ h6{
 }
 
 .aside li:before{
+    font-size: 8px;
     content: '\25ba';
-    padding-right: 6px;
+    padding-right: 10px;
 }
 
 .aside li{
@@ -385,8 +393,8 @@ h6{
 }
 
 .add img{
-    width: 100%;
-    margin: 0 0 0 0;
+    max-width: 100%;
+    margin: 5px 0;
 }
                         /*CONTAINER END*/
 
@@ -394,8 +402,8 @@ h6{
 .post-form{
     background: #fefefe;
     width: 100%;
-    height: 485px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     border: 1px solid #d7d7d7;
 }
 
@@ -414,6 +422,7 @@ h6{
 .post-form input{
     margin-left: 43px;
     width: 90%;
+    max-width: 453px;
     height: 25px;
     border-radius: 3px;
     border: 1px solid #a9a9a9;
@@ -468,18 +477,6 @@ button.cancel{
     height: 450px;
 }
 
-.facebook-button-view{
-    position: absolute;
-    left: 2%;
-    top: 72%;
-}
-
-.twitter-button-view{
-    position: absolute;
-    left: 2%;
-    top: 85%;
-}
-
 .title-post-view{
     position: absolute;
     top: 39%;
@@ -494,26 +491,6 @@ button.cancel{
     top: 35%;
     color: white;
     padding: 1% 15%;
-}
-
-.edit-button-view{
-    position: absolute;
-    right: 1%;
-    top: 1%;
-    height: 30px;
-    width: 30px;
-    background: #f26c4f;
-    border-radius: 4px;
-}
-
-.destroy-button-view{
-    position: absolute;
-    right: 1%;
-    top: 9%;
-    height: 30px;
-    width: 30px;
-    background: #f26c4f;
-    border-radius: 4px;
 }
 
 .text-view{
@@ -611,7 +588,7 @@ button.cancel{
 
                         /*FOOTER BEGIN*/
 footer {
-    height: 390px;
+    min-height: 390px;
     background: #343434;
 
     right: 0;
@@ -630,14 +607,14 @@ footer .info {
 
 footer p {
     line-height: 160%;
+    margin-bottom: 15px;
 }
 
 .join {
-    width: 93%;
+    width: 95%;
     border-radius: 4px;
     height: 50px;
     background: white;
-    margin-left: 40px;
     display: inline-flex;
     box-shadow: inset 0 0 5px #979797;
 }
@@ -648,6 +625,7 @@ footer input[type="search"] {
     -webkit-appearance: none;
     width: 100%;
     margin-top: 2px;
+    margin-left: 13px;
     height: 45px;
     vertical-align: middle;
     text-align: left;
@@ -667,21 +645,28 @@ footer input[type="search"] {
 }
 
 .fa.fa-envelope {
-    padding: 18px 2px;
+    font-size: 14px;
+    padding: 16px 0 0 14px;
     color: #dcdcdc;
 }
 
 .round {
     background: #f26c4f;
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    font-size: 24px;
-    padding: 10px 15px;
+    height: 48px;
+    width: 48px;
+    margin-right: 12px;
 }
+
+.round i{
+    margin: 14px 16px;
+    font-size: 22px;
+}
+
 
 .icons {
     margin-top: 20px;
+    display: inline-flex;
 }
 
 .copyright {
@@ -693,9 +678,20 @@ footer input[type="search"] {
 }
                         /*FOOTER END*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .login {
-        float: left;
-        margin: 0 5% 5px 0;
+        margin: 18px 0 0 24%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .login {
+        margin: 18px 0 0 22%;
+    }
+}
+
+@media screen and (max-width: 984px) {
+    .login {
+        margin: 18px 0 0 12px;
     }
 }
