@@ -7,6 +7,11 @@ a {
     src: url(../fonts/Helvetica.otf);
 }
 
+@font-face {
+    font-family: HelveticaOblique;
+    src: url(../fonts/Helvetica-Oblique.otf);
+}
+
 body {
     background: url(../img/bgsmall-body.png);
     font: 12px Helvetica, Arial, sans-serif;
@@ -191,9 +196,9 @@ body {
 }
 
 .description{
+    background-image: repeating-linear-gradient(180deg, white, white 27px, #ededed 27px, #ededed 28px);
     width: 100%;
-    background: white;
-    float: inherit;
+    float: left;
     margin-bottom: 20px;
     padding-bottom: 40px;
     border: 1px solid #d7d7d7;
@@ -227,10 +232,6 @@ body {
     margin-left: -34px;
 }
 
-.description.small:after, .description.small:before {
-    left: 19%;
-}
-
 h2{
     font: 30px Helvatica, Arial;
     font-weight: bold;
@@ -262,13 +263,13 @@ h2{
 }
 
 .aside{
-    background: white;
+    background-image: repeating-linear-gradient(180deg, white, white 27px, #ededed 27px, #ededed 28px);
     border: 1px solid #d7d7d7;
     margin-bottom: 20px;
 }
 
-.aside p{
-    font: 11px Helvetica, Arial;
+.aside-block p{
+    font: 11px HelveticaOblique, Arial;
     color: #787878;
     line-height: 180%;
     font-style: italic;
@@ -307,6 +308,10 @@ h6{
     font-style:italic;
     margin-top: 4px;
     margin-bottom: 0;
+}
+
+h7{
+
 }
 
 .recieve-updates {
@@ -421,7 +426,7 @@ h6{
 
 .post-form input{
     margin-left: 43px;
-    width: 90%;
+    width: 80%;
     max-width: 453px;
     height: 25px;
     border-radius: 3px;
@@ -477,6 +482,11 @@ button.cancel{
     height: 450px;
 }
 
+.picture.post-view{
+    max-height: 455px;
+    height: 50%;
+}
+
 .title-post-view{
     position: absolute;
     top: 39%;
@@ -487,11 +497,11 @@ button.cancel{
 }
 
 .post-view h2{
-    position: absolute;
-    top: 35%;
-    color: white;
-    padding: 1% 15%;
-}
+     position: absolute;
+     top: 35%;
+     color: white;
+     padding: 1% 15%;
+ }
 
 .text-view{
     background: #fefefe;
@@ -514,7 +524,7 @@ button.cancel{
 }
 
 .text-view p{
-    font: 12px Myriard Pro, Arial;
+    font: 11px Myriard Pro, Arial;
     color: #959595;
     padding: 8px 40px 0 40px;
     line-height: 200%;
@@ -545,9 +555,9 @@ button.cancel{
 }
 
 .comment-item h3{
-    color: #f26c4f;
-    font: 15px Helvatica, Arial;
-    font-weight: bold;
+    color: #3a3e3f;
+    font: 14px Helvatica, Arial;
+    font-style: italic;
     padding: 0 10px 0;
     margin-left: 5px;
     float: left;
@@ -574,16 +584,6 @@ button.cancel{
     margin-left: 65px;
     width: 90%;
 }
-
-.comment-item h5{
-    color: #f26c4f;
-    font: 15px Helvatica, Arial;
-    font-weight: bold;
-    padding: 0;
-    margin: 1px 10px 0 0;
-    float: left;
-}
-
                         /*POST VIEW END*/
 
                         /*FOOTER BEGIN*/
@@ -694,4 +694,57 @@ footer input[type="search"] {
     .login {
         margin: 18px 0 0 12px;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .login {
+        margin: 3px 0 8px 12px;
+    }
+
+    textarea{
+        width: 80%;
+    }
+
+    .post-view h2{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    .nested {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 496px) {
+    .post-view h2 {
+        font-size: 23px;
+    }
+}
+
+
+@media screen and (max-width: 456px) {
+    .post-view h2{
+        font-size: 20px;
+    }
+
+    .user-nameto{
+        display: block;
+    }
+
+    .comment-item h3{
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (max-width: 402px) {
+    .post-view h2{
+        font-size: 17px;
+    }
+}
+
+.user-name, .user-nameto{
+    color: #f26c4f;
+    font: 15px Helvatica, Arial;
+    font-weight: bold;
 }
